@@ -1,0 +1,15 @@
+PARA EDITAR UN PRODUCTO
+
+Desde el front debería de llegar 3 propiedades :
+{
+    "userId" : (El id del usuario),
+    "fields" : [Un arreglo con todos los campos que usuario quiera modificar],
+    "values" : [Un arreglo con los nuevos valores que tendrán las propiedades]
+}
+
+El truco está en que en las posiciones entre "fields" y "values" sean equivalentes
+Es decir, que fields[0] será la propiedad que quiera cambiar y su valor se encontraría en values[0].
+
+EJ:
+fields: = ['title', 'price'];
+values = ['Procesador Intel I5 8400 5000MH', 123.123];
